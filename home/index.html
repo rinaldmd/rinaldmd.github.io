@@ -2,36 +2,20 @@
 	<script src="../list.js"></script>
 
 	<div id="hacker-list">
-	  <ul class="list">
-	   <li data-id="1">
-		 <a href="http://javve.com" class="link name">Jonny</a>
-		 <p class="born timestamp" data-timestamp="1234">1986</p>
-		 <img class="image" src="javve.jpg" />
-	   </li>
-	  </ul>
+		<ul class="list"></ul>
 	</div>
 	
 	<script>
 		var options = {
-		  valueNames: [
-			'name',
-			'born',
-			{ data: ['id'] },
-			{ name: 'timestamp', attr: 'data-timestamp' },
-			{ name: 'link', attr: 'href' },
-			{ name: 'image', attr: 'src' }
-		  ]
+		  valueNames: [ 'name', 'city' ],
+		  item: '<li><h3 class="name"></h3><p class="city"></p></li>'
 		};
 
-		var hackerList = new List('hacker-list', options);
+		var values = [
+		  { name: 'Jonny', city:'Stockholm' }
+		  , { name: 'Jonas', city:'Berlin' }
+		];
 
-		hackerList.add({
-		  name: 'Jonas',
-		  born: '1985',
-		  id: 2,
-		  timestamp: '1337',
-		  link: 'http://arnklint.com'
-		  image: 'jonas.gif'
-		});
+		var hackerList = new List('hacker-list', options, values);
 	</script>
 </html>
